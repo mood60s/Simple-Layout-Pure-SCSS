@@ -1,0 +1,27 @@
+/*Start Heading Component Title*/
+.head-with-border {
+  position: relative;
+  z-index: 4;
+  h2 {
+    background-color: $redColor;
+    color: #fff;
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 15px;
+    max-width: 400px;
+    overflow: hidden;
+    padding: 10px 15px;
+    height: 48px;
+    &::before {
+      content: "";
+      width: 100%;
+      background-color: $greyColor;
+      height: 1.5px;
+      position: absolute;
+      left: 0;
+      top: 24px;
+      z-index: -2;
+    }
+  }
+}
+/*End Heading component Title*/

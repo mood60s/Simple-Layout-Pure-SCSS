@@ -1,0 +1,13 @@
+// Import Helpers Variables Mixin
+@import "scss/helpers/variables";
+@import "scss/helpers/mixins";
+// Global page;
+@import "scss/pages/globalpage";
+// import Button Component
+@import "scss/components/buttons";
+@import "scss/components/headings";
+//Import Layout
+@import "scss/layout/grid";
+@import "scss/layout/header";
+@import "scss/pages/homePage";
+@import "scss/layout/footer";

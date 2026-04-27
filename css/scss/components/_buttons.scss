@@ -1,0 +1,48 @@
+/*Start Buttons Component Global*/
+.main-button {
+  background: rgba($redColor, 0.8);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 80px;
+  cursor: pointer;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  @include prefixer(transition, 0.2s linear, webkit moz ms o);
+
+  &:hover {
+    background: $redColor;
+  }
+}
+.the-toggler{
+  background-color: transparent;
+  border: 1px solid $redColor;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s border-color linear,background 0.3s linear;
+  display: none;
+  @media #{$maxMobile}{ 
+    display: block;
+  }
+ &:hover{
+  border-color: transparent;
+  background: $redColor;
+ }
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  span {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+/*End Buttons Component Global*/

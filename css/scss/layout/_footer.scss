@@ -1,0 +1,126 @@
+/*Start Footer*/
+.footer {
+  background-color: #e2e2e2;
+  .content-company {
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    @media#{$maxMobile} {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .gallery {
+      @media #{$minSmall} and (max-width:991px) {
+        width: 100%;
+      }
+      .img-box {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+        @media#{$maxMobile} {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .img-gallery {
+          width: 100px;
+          object-fit: cover;
+        }
+        .text {
+          @media#{$maxMobile} {
+            text-align: center;
+            margin-top: 4px;
+          }
+          .title-gallery {
+            margin: 0;
+            color: $redColor;
+            line-height: 0;
+          }
+          .desc-gallery {
+            margin: 20px 0;
+            color: #777;
+            max-width: 300px;
+            line-height: 1.6;
+          }
+        }
+      }
+    }
+    .info-company {
+      @media #{$minSmall} and (max-width:991px) {
+        flex: 1;
+      }
+      .details {
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #ccc;
+        .deatil {
+          color: #777;
+          list-style-type: none;
+          margin-bottom: 10px;
+        }
+      }
+      .working {
+        color: #777;
+        margin-bottom: 0;
+      }
+      .desc-company {
+        color: #777;
+        margin-top: 8px;
+      }
+    }
+    .contact {
+      @media #{$minSmall} and (max-width:991px){
+        flex: 1;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          border: 1px solid #c9c9c9;
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 10px;
+          outline: 1px solid #c5c5c5;
+        }
+        textarea {
+          height: 150px;
+          resize: none;
+        }
+        button {
+          width: 100px;
+          margin: auto;
+        }
+      }
+    }
+  }
+  .section-title {
+    color: #444;
+    font-weight: normal;
+    width: 160px;
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-top: 1px solid #c5c5c5;
+    @media #{$maxMobile} {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .text {
+      color: #777;
+    }
+    .author {
+      color: #777;
+    }
+  }
+}
+/*End Footer*/
